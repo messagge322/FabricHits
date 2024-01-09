@@ -16,7 +16,7 @@ public class IngameRenderMixin {
     @Inject(at = @At(value = "RETURN"), method = "render", cancellable = true)
     public void render(MatrixStack matrixStack, float ttf, CallbackInfo info) {
         if (!config.isPanic()) {
-            MinecraftClient.getInstance().inGameHud.getFontRenderer().draw(matrixStack, "Coded by bushrutixxx", 10, 10, new Color(0xFA63FF).getRGB());
+            MinecraftClient.getInstance().inGameHud.getFontRenderer().draw(matrixStack, "<<WinX>> discord.gg/Puqrha25KS", 10, 10, new Color(white).getRGB());
         }
     }
 }
